@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       <footer className=" sticky bottom-5 w-full cursor-pointer">
-        <Link href="#hero">
+        <Link href="#hero" >
           <div className="flex items-end justify-end mr-7">
             {" "}
             <Image

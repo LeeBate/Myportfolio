@@ -81,7 +81,7 @@ export default function Header({}: Props) {
         />
         <Link href="/#contact">
         <p className=" uppercase hidden md:inline-flex text-sm text-gray-400">
-          get in touch
+        Click Me Now!
         </p>
         </Link>
       </motion.div>

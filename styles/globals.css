@@ -59,19 +59,19 @@ body {
 }
 .star:nth-child(1) {
   --star-tail-length: 6.68em;
-  --top-offset: 79.73vh;
+  --top-offset: 110vh;
   --fall-duration: 7.687s;
-  --fall-delay: 7.695s;
+  --fall-delay: 1.695s;
 }
 .star:nth-child(2) {
   --star-tail-length: 6.47em;
-  --top-offset: 17.14vh;
+  --top-offset: 10vh;
   --fall-duration: 7.383s;
   --fall-delay: 1.053s;
 }
 .star:nth-child(3) {
   --star-tail-length: 6.23em;
-  --top-offset: 31.13vh;
+  --top-offset: 100.13vh;
   --fall-duration: 6.196s;
   --fall-delay: 1.599s;
 }
@@ -79,11 +79,11 @@ body {
   --star-tail-length: 6.29em;
   --top-offset: 50.58vh;
   --fall-duration: 9.804s;
-  --fall-delay: 4.756s;
+  --fall-delay: 1.756s;
 }
 .star:nth-child(5) {
   --star-tail-length: 5.1em;
-  --top-offset: 78.39vh;
+  --top-offset: 44.39vh;
   --fall-duration: 7.833s;
   --fall-delay: 1.326s;
 }
@@ -91,13 +91,13 @@ body {
   --star-tail-length: 7.37em;
   --top-offset: 84.12vh;
   --fall-duration: 7.826s;
-  --fall-delay: 6.235s;
+  --fall-delay: 1.235s;
 }
 .star:nth-child(7) {
   --star-tail-length: 6.35em;
   --top-offset: 57.29vh;
-  --fall-duration: 11.034s;
-  --fall-delay: 8.479s;
+  --fall-duration: 7.034s;
+  --fall-delay: 1.479s;
 }
 .star:nth-child(8) {
   --star-tail-length: 5.06em;
@@ -167,14 +167,14 @@ body {
     width: 0;
     opacity: 0.4;
   }
-  0% {
+  1% {
     width: 0;
     opacity: 0;
   }
 }
 @keyframes blink {
   50% {
-    opacity: 1;
-    color: rgb(86, 156, 236);
+    opacity: 0.5;
+    color: #0c0d13;
   }
 }
