@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heroButton {
+      @apply px-6 py-2 border  rounded-full uppercase text-xs
+      tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40
+      hover:text-[#F7AB0A]/40;
+  }
+
+  .contactInput {
+      @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500
+      placeholder-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  transform: rotate(-45deg);
+}
+
+.star {
+  --star-color: var(--primary-color);
+  --star-tail-length: 6em;
+  --star-tail-height: 2px;
+  --star-width: calc(var(--star-tail-length) / 6);
+  --fall-duration: 9s;
+  --tail-fade-duration: var(--fall-duration);
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: var(--star-tail-height);
+  color: var(--star-color);
+  background: linear-gradient(45deg, currentColor, transparent);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px currentColor);
+  transform: translate3d(104em, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+}
+@media screen and (max-width: 750px) {
+  .star {
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+  }
+}
+.star:nth-child(1) {
+  --star-tail-length: 6.68em;
+  --top-offset: 79.73vh;
+  --fall-duration: 7.687s;
+  --fall-delay: 7.695s;
+}
+.star:nth-child(2) {
+  --star-tail-length: 6.47em;
+  --top-offset: 17.14vh;
+  --fall-duration: 7.383s;
+  --fall-delay: 1.053s;
+}
+.star:nth-child(3) {
+  --star-tail-length: 6.23em;
+  --top-offset: 31.13vh;
+  --fall-duration: 6.196s;
+  --fall-delay: 1.599s;
+}
+.star:nth-child(4) {
+  --star-tail-length: 6.29em;
+  --top-offset: 50.58vh;
+  --fall-duration: 9.804s;
+  --fall-delay: 4.756s;
+}
+.star:nth-child(5) {
+  --star-tail-length: 5.1em;
+  --top-offset: 78.39vh;
+  --fall-duration: 7.833s;
+  --fall-delay: 1.326s;
+}
+.star:nth-child(6) {
+  --star-tail-length: 7.37em;
+  --top-offset: 84.12vh;
+  --fall-duration: 7.826s;
+  --fall-delay: 6.235s;
+}
+.star:nth-child(7) {
+  --star-tail-length: 6.35em;
+  --top-offset: 57.29vh;
+  --fall-duration: 11.034s;
+  --fall-delay: 8.479s;
+}
+.star:nth-child(8) {
+  --star-tail-length: 5.06em;
+  --top-offset: 9.2vh;
+  --fall-duration: 8.966s;
+  --fall-delay: 2.111s;
+}
+.star:nth-child(9) {
+  --star-tail-length: 7.43em;
+  --top-offset: 22.74vh;
+  --fall-duration: 7.371s;
+  --fall-delay: 8.218s;
+}
+.star:nth-child(10) {
+  --star-tail-length: 5.93em;
+  --top-offset: 10.6vh;
+  --fall-duration: 9.439s;
+  --fall-delay: 0.314s;
+}
+.star:nth-child(11) {
+  --star-tail-length: 7.39em;
+  --top-offset: 23.01vh;
+  --fall-duration: 9.635s;
+  --fall-delay: 7.826s;
+}
+.star:nth-child(12) {
+  --star-tail-length: 5.84em;
+  --top-offset: 74.34vh;
+  --fall-duration: 7.885s;
+  --fall-delay: 9.75s;
+}
+.star:nth-child(13) {
+  --star-tail-length: 5.75em;
+  --top-offset: 74.61vh;
+  --fall-duration: 9.767s;
+  --fall-delay: 8.189s;
+}
+.star::before, .star::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: calc(var(--star-width) / -2);
+  width: var(--star-width);
+  height: 100%;
+  background: linear-gradient(45deg, transparent, currentColor, transparent);
+  border-radius: inherit;
+  animation: blink 2s linear infinite;
+}
+.star::before {
+  transform: rotate(45deg);
+}
+.star::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(-30em, 0, 0);
+  }
+}
+@keyframes tail-fade {
+  0%, 50% {
+    width: var(--star-tail-length);
+    opacity: 1;
+  }
+  70%, 80% {
+    width: 0;
+    opacity: 0.4;
+  }
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+    color: rgb(86, 156, 236);
+  }
+}
