@@ -52,7 +52,7 @@ export default function Header({}: Props) {
         />
         <SocialIcon
           url="https://drive.google.com/file/d/1f6LOQ3MRmWJaOayxZjebydNNZS6bnOUa/view?usp=sharing"
-          fgColor="#cf318a"
+          fgColor="#45bd62"
           bgColor="transparent"
           className="filter grayscale hover:grayscale-0 transform transition duration-500 hover:scale-125"
           label="Our portfolio" 

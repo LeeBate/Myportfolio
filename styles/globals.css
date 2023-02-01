@@ -10,18 +10,16 @@
   }
 
   .contactInput {
-      @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500
+      @apply outline-none bg-slate-400/10 rounded-sm border-b px-4 py-2 border-[#242424] text-gray-500
       placeholder-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
   }
 }
 
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+ 
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-  overflow: hidden;
+  
 }
 
 .stars {
@@ -178,3 +176,14 @@ body {
     color: #0c0d13;
   }
 }
+
+.rive-container {
+  min-height: 200px;
+  min-width: 100px;
+  width: 50%;
+  
+}
+  
+
+
+

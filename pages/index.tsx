@@ -51,6 +51,8 @@ export default function Home() {
         <ContactMe />
       </section>
 
+     
+
       <footer className=" sticky bottom-5 w-full cursor-pointer">
         <Link href="#hero" >
           <div className="flex items-end justify-end mr-7">
