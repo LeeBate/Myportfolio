@@ -15,7 +15,7 @@ function Skill({directionLeft,}: Props) {
             initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png"
+            src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png"
             alt=''
             className=' rounded-full border border-gray-500 
             object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32

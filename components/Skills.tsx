@@ -5,6 +5,10 @@ import SkillJavaS from "./Skills/SkillJavaS";
 import SkillHTML from "./Skills/SkillHTML";
 import SkillCSS from "./Skills/SkillCSS";
 import SkillTailwind from "./Skills/SkillTailwind";
+import SkillNextJS from "./Skills/SkillNextJS";
+import SkillReact from "./Skills/SkillReact";
+import SkillNodeJS from "./Skills/SkillNodeJS";
+import SkillMongo from "./Skills/SkillMongo";
 
 type Props = {};
 
@@ -35,8 +39,12 @@ function Skills({}: Props) {
       <div className=" grid grid-cols-3 md:grid-cols-4  gap-5">
         <SkillJavaS />
         <SkillHTML />
-        <SkillTailwind />
         <SkillCSS />
+        <SkillTailwind />
+        <SkillNextJS />
+        <SkillReact />
+        <SkillNodeJS />
+        <SkillMongo />
       </div>
     </motion.div>
   );
