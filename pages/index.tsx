@@ -1,36 +1,31 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import React from "react";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
-import styles from "@/styles/Home.module.css";
+
 import Link from "next/link";
 import Stars from "@/components/Stars";
 
 export default function Home() {
-  
   return (
-   
     <div
       className=" bg-[rgb(#0d1d31,#0c0d13,36)] text-white
     h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 
     scrollbar-thumb-[#F7AB0A]/80  "
-    > 
-    <Stars />
+    >
+      <Stars />
       <Head>
-        <title>Lee's Portfolio</title>
-        <meta name="description" content="Lee Yang's Portfolio" />
+        <title>Lee&apos;s Portfolio</title>
+        <meta name="description" content="Lee Yang&apos;s Portfolio" />
         <link rel="icon" href="/lee.jpg" />
-        
       </Head>
       <Header />
-      
+
       <section id="hero" className="snap-start">
         <Hero />
       </section>
@@ -51,10 +46,8 @@ export default function Home() {
         <ContactMe />
       </section>
 
-     
-
       <footer className=" sticky bottom-5 w-full cursor-pointer">
-        <Link href="#hero" >
+        <Link href="#hero">
           <div className="flex items-end justify-end mr-7">
             {" "}
             <Image
@@ -72,6 +65,5 @@ export default function Home() {
       </section>
        */}
     </div>
-   
   );
 }
