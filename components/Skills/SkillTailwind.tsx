@@ -15,7 +15,7 @@ function Skill({directionLeft,}: Props) {
             initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png"
+            src="https://d3mxt5v3yxgcsr.cloudfront.net/courses/7443/course_7443_image.jpg"
             alt=''
             className=' rounded-full border border-gray-500 
             object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32

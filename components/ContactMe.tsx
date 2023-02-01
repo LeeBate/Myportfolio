@@ -128,15 +128,15 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
         <div className=" space-y-10">
         
           <div className=" flex flex-col items-center space-x-5 justify-center">
-          <h4 className=" lg:text-4xl text-2xl font-semibold text-center">
+          <h4 className=" lg:text-4xl text-2xl font-semibold text-center mb-3">
           <span>If I have what you want. </span>
           <span className=" underline decoration-yellow-500">Contact Me!</span>
         </h4>
-            <div className=" flex">
+            <div className=" flex space-x-3 ">
             <PhoneIcon className=" text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className=" text-2xl">0632539362</p>
             </div>
-            <div className=" flex">
+            <div className=" flex space-x-3">
               <EnvelopeIcon className=" text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className=" text-2xl">harukaxd02@gmail.com</p>
             </div>

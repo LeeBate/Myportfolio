@@ -15,7 +15,7 @@ function Skill({directionLeft,}: Props) {
             initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
+            src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.jpg"
             alt=''
             className=' rounded-full border border-gray-500 
             object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32
