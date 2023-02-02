@@ -21,7 +21,7 @@ export default function Home() {
       <Stars />
       <Head>
         <title>Lee&apos;s Portfolio</title>
-        <meta name="description" content="Lee Yang&apos;s Portfolio" />
+        <meta name="description" content="Lee &apos;s Portfolio" />
         <link rel="icon" href="/lee.jpg" />
       </Head>
       <Header />
