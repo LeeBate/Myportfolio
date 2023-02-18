@@ -26,10 +26,10 @@ export default function About({}: Props) {
         transition={{ duration: 1.2 }}
         src="/lee.jpg"
         alt="Lee"
-        className="-mb-32 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full 
+        className="-mb-32 mt-20 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full 
           object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[600px] xl:h-[450px]"
       />
-      <div className=" space-y-5 px-0 md:px-10">
+      <div className=" space-y-5 mt-20 px-0 md:px-10">
         <h4 className=" text-2xl lg:text-4xl font-semibold">Let Me <span className=" underline decoration-[#F7AB0A]/80">Introduce</span>  Myself</h4>
         <p className=" text-lg">
           My name is Natthaphong Wongsaengphet. You can call me Lee.

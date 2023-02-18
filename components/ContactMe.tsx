@@ -127,8 +127,14 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
 
         <div className=" space-y-10">
         
+         
+
+          
+          <div className=" flex items-center space-x-5 justify-center">
+          <RiveComponent className="rive-container" />
+          </div> 
           <div className=" flex flex-col items-center space-x-5 justify-center">
-          <h4 className=" lg:text-4xl text-2xl font-semibold text-center mb-3">
+          <h4 className=" lg:text-4xl text-lg font-semibold text-center mb-3">
           <span>If I have what you want. </span>
           <span className=" underline decoration-yellow-500">Contact Me!</span>
         </h4>
@@ -142,16 +148,11 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
             </div>
             
           </div>
-
-          
-          <div className=" flex items-center space-x-5 justify-center">
-          <RiveComponent className="rive-container" />
-          </div> 
         </div>
         
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className=" flex flex-col space-y-2 w-fit mx-auto"
+          className=" flex flex-col space-y-2 w-fit mx-auto p-5"
         >
           <div className=" flex space-x-2">
             <input

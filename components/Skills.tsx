@@ -36,7 +36,7 @@ function Skills({}: Props) {
         transition={{ duration: 1.2 }}
         
       />
-      <div className=" grid grid-cols-3 md:grid-cols-4  gap-5">
+      <div className=" grid grid-cols-3 md:grid-cols-4 gap-5 mt-10">
         <SkillHTML />
         <SkillCSS />
         <SkillJavaS />
