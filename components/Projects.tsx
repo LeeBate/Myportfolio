@@ -58,7 +58,7 @@ function Projects({}: Props) {
                 Develop web applications using NodeJS, MongoDB, and Next.js
                 framework.
               </p>
-              <a className="text-lg text-center md:text-left underline hover:decoration-[#F7AB0A]" target="_blank" href="https://calllab.vercel.app/"> Demo link : https://calllab.vercel.app/</a>
+              <a className="text-lg text-center md:text-left underline hover:decoration-[#F7AB0A]" href="https://calllab.vercel.app/"> Demo link : https://calllab.vercel.app/</a>
               
             </div>
           </div>
