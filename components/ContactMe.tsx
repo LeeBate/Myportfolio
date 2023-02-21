@@ -123,33 +123,22 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
       </h3>
 
       <div className=" flex flex-col space-y-10">
-       
-
-        <div className=" space-y-10">
-        
-         
-
-          
-          <div className=" flex items-center space-x-5 justify-center">
-          <RiveComponent className="rive-container" />
-          </div> 
-          <div className=" flex flex-col items-center space-x-5 justify-center">
-          <h4 className=" lg:text-4xl text-lg font-semibold text-center mb-3">
-          <span>If I have what you want. </span>
-          <span className=" underline decoration-yellow-500">Contact Me!</span>
-        </h4>
-            <div className=" flex space-x-3 ">
+        <div className=" flex flex-col space-y-2">
+            <div className=" flex flex-col items-center space-x-2 justify-center mt-20 md:mt-44">
+          <div className=" flex space-x-3 ">
             <PhoneIcon className=" text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className=" text-2xl">0632539362</p>
-            </div>
-            <div className=" flex space-x-3">
-              <EnvelopeIcon className=" text-[#F7AB0A] h-7 w-7 animate-pulse" />
+          </div>
+          <div className=" flex space-x-3">
+            <EnvelopeIcon className=" text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className=" text-2xl">harukaxd02@gmail.com</p>
-            </div>
-            
           </div>
         </div>
-        
+        </div>
+      
+        <div className=" hidden md:flex justify-center items-center">
+          <RiveComponent className="rive-container" />
+        </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className=" flex flex-col space-y-2 w-fit mx-auto p-5"
@@ -163,8 +152,6 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
               type="text"
               onFocus={() => (isHandsUpInput!.value = true)}
               onBlur={() => (isHandsUpInput!.value = false)}
-             
-              
             />
             <input
               {...register("email")}
@@ -173,8 +160,7 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
               className="contactInput"
               type="email"
               onFocus={() => (isHandsUpInput!.value = true)}
-                onBlur={() => (isHandsUpInput!.value = false)}
-              
+              onBlur={() => (isHandsUpInput!.value = false)}
             />
           </div>
           <input

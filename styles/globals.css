@@ -178,17 +178,17 @@ body {
 }
 
 .rive-container {
-  min-height: 200px;
+  height: 150px;
   min-width: 100px;
   width: 50%;
   
 }
 @media screen and (max-width: 750px) {
   .rive-container {
-    min-height: 20px;
+    min-height: 200px;
     min-width: 10px;
-    width: 50%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
   }
 }
   
