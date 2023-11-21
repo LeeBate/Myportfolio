@@ -37,26 +37,26 @@ export default function Header({}: Props) {
           bgColor="transparent"
           className="filter grayscale hover:grayscale-0  transform transition duration-500 hover:scale-125"
         />
-        <SocialIcon
+        {/* <SocialIcon
           url="https://www.instagram.com/billy_np/"
           fgColor="#cf318a"
           bgColor="transparent"
           className="filter grayscale hover:grayscale-0 transform transition duration-500 hover:scale-125"
-        />
-        <SocialIcon
+        /> */}
+        {/* <SocialIcon
           url="https://www.facebook.com/LeeWongsaengphet/"
           
           fgColor="#097ceb"
           bgColor="transparent"
           className="filter grayscale hover:grayscale-0 transform transition duration-500 hover:scale-125"
-        />
-        <SocialIcon
+        /> */}
+        {/* <SocialIcon
           url="https://drive.google.com/file/d/1f6LOQ3MRmWJaOayxZjebydNNZS6bnOUa/view?usp=sharing"
           fgColor="#45bd62"
           bgColor="transparent"
           className="filter grayscale hover:grayscale-0 transform transition duration-500 hover:scale-125"
           label="Our portfolio" 
-          />
+          /> */}
       </motion.div>
 
       <motion.div

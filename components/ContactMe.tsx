@@ -131,7 +131,7 @@ const ContactMe = (riveProps: UseRiveParameters = {}) => {
           </div>
           <div className=" flex space-x-3">
             <EnvelopeIcon className=" text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className=" text-2xl">harukaxd02@gmail.com</p>
+            <p className=" text-2xl">NattaphongDev@gmail.com</p>
           </div>
         </div>
         </div>

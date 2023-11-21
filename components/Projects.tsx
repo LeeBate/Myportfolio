@@ -3,11 +3,12 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import PJ from "./project.json"
 import { SocialIcon } from "react-social-icons";
 type Props = {};
 
 function Projects({}: Props) {
-  const projects = [1];
+  const projects = [1,2];
   return (
     <div
       className=" h-screen relative flex overflow-hidden flex-col text-left md:flex-row
@@ -32,39 +33,46 @@ function Projects({}: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src="/p1.png"
+              src={`${PJ.projects[i].imageSrc}`}
               alt=""
               className=" xl:w-[1200px] xl:h-[400px] object-contain "
             />
 
-            <div className=" space-y-10 px-0 md:px-10 max-w-6xl">
+            <div className=" space-y-10 px-0 md:px-10 max-w-4xl">
               <div className=" flex flex-row">
               <h4 className=" lg:text-4xl text-2xl font-semibold text-center">
                 <span className=" underline decoration-[#F7AB0A]">
                   {" "}
                   Project {i + 1} of {projects.length} :
                 </span>{" "}
-                Web Application
+              {/* ฉันต้องการแสดงข้อมูลใน PJ*/}
+                {PJ.projects[i].name}
+
               </h4>
               
               <SocialIcon
-                url="https://github.com/LeeBate/WebDek-D_NextJS-With-Mongodb"
+                url={`${PJ.projects[i].githubLink}`}
                 fgColor="#ffffff"
                 bgColor="transparent"
                 className="w-20 h-20 animate-bounce"
               />
               </div>
               <p className=" text-lg text-center md:text-left">
-                Develop web applications using NodeJS, MongoDB, and Next.js
-                framework.
+                {PJ.projects[i].description}
               </p>
-              <a className="text-lg text-center md:text-left underline hover:decoration-[#F7AB0A]" href="https://calllab.vercel.app/"> Demo link : https://calllab.vercel.app/</a>
+              <a className="text-lg text-center md:text-left underline hover:decoration-[#F7AB0A]" href={`${PJ.projects[i].demoLink}`}> {PJ.projects[i].demo} : {PJ.projects[i].demoLink}</a>
               
             </div>
           </div>
+
+          
         ))}
+
+        
       </div>
       <div className=" absolute w-full h-[500px] top-[30%] left-0 bg-[#F7AB0A]/10 -skew-y-12" />
+
+      
     </div>
   );
 }

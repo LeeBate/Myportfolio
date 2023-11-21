@@ -1,0 +1,22 @@
+
+{
+    "projects": [
+      {
+        "name": "CALLLAB",
+        "description": "The project, developed to track the results of various chemical testing steps using Next.js and MongoDB is also being further developed for implementation by organizations within the university.",
+        "demo" : "Links to projects that have been further developed and put into practice",
+        "demoLink": "https://analytical.sut.ac.th/",
+        "githubLink": "https://github.com/LeeBate/WebDek-D_NextJS-With-Mongodb",
+        "imageSrc": "/p1.png"
+      },
+      {
+        "name": "Clone a landing page website", 
+        "description": "This project is to clone a landing page website using the structure of the Apple website and use the content of the Oppo website using HTML CSS and Javascript.",
+        "demo" : "Demo link to the project",
+        "demoLink": "https://elated-deer-wig.cyclic.app/",
+        "githubLink": "https://github.com/LeeBate/CloneLayout_AppleWebsite_Cyclic",
+        "imageSrc": "add.png"
+      }
+    ]
+  }
+  
