@@ -2,9 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-type Props = {
-  
-};
+type Props = {};
 
 export default function About({}: Props) {
   return (
@@ -30,15 +28,19 @@ export default function About({}: Props) {
           object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[600px] xl:h-[450px]"
       />
       <div className=" space-y-5 mt-20 px-0 md:px-10">
-        <h4 className=" text-2xl lg:text-4xl font-semibold">Let Me <span className=" underline decoration-[#F7AB0A]/80">Introduce</span>  Myself</h4>
+        <h4 className=" text-2xl lg:text-4xl font-semibold">
+          Let Me{" "}
+          <span className=" underline decoration-[#F7AB0A]/80">Introduce</span>{" "}
+          Myself
+        </h4>
         <p className=" text-lg">
           My name is Natthaphong Wongsaengphet. You can call me Lee.
-          <span className="ml-1">I am studying digital technology in my third year at the Suranaree
-          University of Technology.</span>
-           I like to learn to improve my abilities. I
-          love communicating with the people on the team and leading the team
-          toward its goals. 
-          I hope everyone will be happy when you work with me 💯.
+          <span className="ml-[9px]">
+            I am a new graduate from Suranaree University of Technology.
+          </span>
+          I like to learn to improve my abilities. I love communicating with the
+          team and leading the team towards its goals. I hope everyone will be
+          happy when you work with me. 💯.
         </p>
       </div>
     </motion.div>
